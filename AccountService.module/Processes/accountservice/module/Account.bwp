@@ -158,6 +158,17 @@
                 </complexContent>
             </complexType>
             <element name="ActivityTimedOutException" type="tns:ActivityTimedOutExceptionType"/>
+            <complexType name="DuplicateKeyExceptionType">
+                <complexContent>
+                    <extension base="tns:ActivityExceptionType">
+                        <sequence>
+                            <element name="duplicateKey" type="string"/>
+                            <element minOccurs="0" name="previousJobID" type="string"/>
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
+            <element name="DuplicateKeyException" type="tns:DuplicateKeyExceptionType"/>
         </schema>
         <schema
             targetNamespace="http://www.tibco.com/namespaces/tnt/plugins/jdbc+58bcfa3c-2b66-4ba4-ae0c-92a735495cad+input"
@@ -518,7 +529,7 @@
                                     <layoutConstraint
                                     height="40"
                                     width="40"
-                                    x="68"
+                                    x="60"
                                     xsi:type="notation:Bounds" y="11"/>
                                     </children>
 
