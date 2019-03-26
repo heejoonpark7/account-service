@@ -10,6 +10,7 @@
       <parameters xmi:id="_78asEF_fEeeuL9GFFVgdQQ">
         <parameterMapping xmi:id="_78asEV_fEeeuL9GFFVgdQQ" parameterName="id" parameterType="Path" required="true"/>
       </parameters>
+      <advancedConfig xmi:id="_xjEMQE9yEem1GblOyRkEwA" blockingQueueSize="2147483647"/>
     </scaext:binding>
     <scact:bindingAdjunct xmi:id="_78PF4V_fEeeuL9GFFVgdQQ" bindingName="RestService"/>
   </sca:service>

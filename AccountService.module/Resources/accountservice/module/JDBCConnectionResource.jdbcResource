@@ -4,7 +4,7 @@
   <jndi:configuration xsi:type="jdbc:JdbcDataSource" xmi:id="_U1XGI1_hEeeuL9GFFVgdQQ">
     <substitutionBindings xmi:id="_XttMQF_hEeeuL9GFFVgdQQ" template="username" propName="DB_USER"/>
     <substitutionBindings xmi:id="_givJ4F_6EeeuL9GFFVgdQQ" template="password" propName="DB_PASS"/>
-    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_U1XGJF_hEeeuL9GFFVgdQQ" jdbcDriver="org.postgresql.Driver">
+    <connectionConfig xsi:type="jdbc:NonXaConnection" xmi:id="_U1XGJF_hEeeuL9GFFVgdQQ" jdbcDriver="org.postgresql.Driver" dbURL="jdbc:postgresql://&lt;servername>:&lt;portnumber>/&lt;dbname>">
       <substitutionBindings xmi:id="_993UgF_hEeeuL9GFFVgdQQ" template="dbURL" propName="DB_URL"/>
     </connectionConfig>
   </jndi:configuration>
