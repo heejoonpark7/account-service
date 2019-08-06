@@ -2,6 +2,30 @@
 <repository xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance" xmlns = "http://www.tibco.com/xmlns/repo/types/2002">
 	<globalVariables>
 		<globalVariable>
+			<name>DB_USER</name>
+			<value>masteruser</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>DB_PASS</name>
+			<value>#!e1sJthEwGOmMZpXugVUP0izonV4VOfsNNWqWb1yBcWE=</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>Password</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
+			<name>DB_URL</name>
+			<value>jdbc:postgresql://acctcustomerdb.c7ddndnzlqre.us-east-1.rds.amazonaws.com:5432/myacctcustomerdb</value>
+			<deploymentSettable>false</deploymentSettable>
+			<serviceSettable>false</serviceSettable>
+			<type>String</type>
+			<isOverride>false</isOverride>
+		</globalVariable>
+		<globalVariable>
 			<name>//AccountService.module//BW.APPNODE.NAME</name>
 			<value></value>
 			<deploymentSettable>false</deploymentSettable>
@@ -59,27 +83,27 @@
 		</globalVariable>
 		<globalVariable>
 			<name>//AccountService.module//DB_URL</name>
-			<value>jdbc:postgresql://acctcustomerdb.cosweg9a09hg.us-east-2.rds.amazonaws.com:5432/myacctcustomerdb</value>
+			<value>%%DB_URL%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//AccountService.module//DB_USER</name>
-			<value>masteruser</value>
+			<value>%%DB_USER%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>String</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 		<globalVariable>
 			<name>//AccountService.module//DB_PASS</name>
-			<value>#!2CPFSqF7hYgo8ZCCd13Awl8iwzce1on/i0FlD4CCWDE=</value>
+			<value>%%DB_PASS%%</value>
 			<deploymentSettable>false</deploymentSettable>
 			<serviceSettable>false</serviceSettable>
 			<type>Password</type>
-			<isOverride>false</isOverride>
+			<isOverride>true</isOverride>
 		</globalVariable>
 	</globalVariables>
 </repository>
