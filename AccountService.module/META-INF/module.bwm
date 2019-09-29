@@ -24,6 +24,9 @@
   <sca:property xmi:id="_ZxiFMF_hEeeuL9GFFVgdQQ" name="DB_URL" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_bG-OIF_hEeeuL9GFFVgdQQ" name="DB_USER" type="XMLSchema:string" publicAccess="true" scalable="true"/>
   <sca:property xmi:id="_DJKV4F_8EeeuL9GFFVgdQQ" name="DB_PASS" type="property:password" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_YniqsNlaEemop8nzh7b78Q" name="DB_URL1" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aGqUENlaEemop8nzh7b78Q" name="DB_URL11" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
+  <sca:property xmi:id="_aTeBANlaEemop8nzh7b78Q" name="DB_URL111" type="XMLSchema:string" scaext:simpleValue="" publicAccess="true" scalable="true"/>
   <sca:component xmi:id="_Y1GEYF_cEeeuL9GFFVgdQQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
     <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_Y1GEYV_cEeeuL9GFFVgdQQ" processName="accountservice.module.Account"/>
     <sca:service xmi:id="_78N3wF_fEeeuL9GFFVgdQQ" name="account">
